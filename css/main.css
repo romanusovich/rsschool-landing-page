@@ -1,7 +1,17 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+section {
+    max-width: 1360px;
+}
+
+/* Hero Section */
 .hero {
     background-image: url("../images/img-hero.jpg");
 
-    max-width: 1360px;
     border-radius: 40px;
     padding: 100px;
 }
@@ -22,7 +32,80 @@
 
     border-radius: 100px;
     border: none;
-    
+
     background-color: var(--bg-page);
     cursor: pointer;
 }
+/* End of Hero Section */
+
+/* Favorite Coffee Section */
+.fav-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.fav-coffee-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    max-width: 480px;
+}
+
+.slider-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-image img {
+    width: 480px;
+    height: 480px;
+}
+
+.slider-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.prev, .next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 1px solid var(--border-inverse);
+    background-color: var(--bg-page);
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+/* End of Favorite Coffee Section */

@@ -1,3 +1,4 @@
+/* General Styles */
 :root {
     --text-primary: #403F3D;
     --text-inverse: #E1D4C9;
@@ -92,7 +93,9 @@ h3 {
     line-height: 125%;
     letter-spacing: 0%;
 }
+/* End of General Styles */
 
+/* Reset Styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -102,6 +105,7 @@ h3 {
 html {
     scroll-behavior: smooth;
 }
+/* End of Reset Styles */
 
 .container {
     max-width: 1440px;
@@ -116,6 +120,7 @@ html {
     color: var(--text-primary);
 }
 
+/* Header Styles */
 .logo {
     display: flex;
 }
@@ -186,3 +191,4 @@ a {
     justify-content: space-between;
     gap: 8px;
 }
+/* End of Header Styles */
