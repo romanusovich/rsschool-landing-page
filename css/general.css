@@ -108,5 +108,75 @@ html {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding: 20px 0 40px;
+    padding: 20px 40px 40px;
+}
+
+.container.light-theme {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > nav {
+    margin-right: 40px;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 4px;
+    width: 88px;
+    height: 44px;
+    
+    border: 1px solid var(--border-primary);
+    border-radius: 100px;
+}
+
+.light, .dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1px;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.light.active {
+    background-color: var(--text-accent);
+}
+
+.coffee-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
 }
