@@ -1,0 +1,28 @@
+.hero {
+    background-image: url("../images/img-hero.jpg");
+
+    max-width: 1360px;
+    border-radius: 40px;
+    padding: 100px;
+}
+
+.hero-offer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 40px;
+
+    width: 530px;
+}
+
+.hero-offer > button {
+    width: 200px;
+    padding: 20px 78px;
+
+    border-radius: 100px;
+    border: none;
+    
+    background-color: var(--bg-page);
+    cursor: pointer;
+}
