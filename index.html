@@ -12,153 +12,137 @@
 </head>
 <body>
     <div class="container light-theme">
-        <header>
-            <div class="header-container">
-                <a class="logo">
-                    <img src="images/logo.svg" alt="Coffee House logo">
-                </a>
-                <nav>
-                    <ul>
-                        <li><a class="action" href="#">Favorite coffee</a></li>
-                        <li><a class="action" href="#">About</a></li>
-                        <li><a class="action" href="#">Mobile app</a></li>
-                        <li><a class="action" href="#">Contact us</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <div class="theme-switch">
-                        <div class="light active">
-                            <img src="images/sun.svg" alt="sun icon">
-                        </div>
-                        <div class="dark">
-                            <img src="images/moon.svg" alt="moon icon">
-                        </div>
+        <header class="header-container">
+            <a class="logo">
+                <img src="images/logo.svg" alt="Coffee House logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a class="action" href="#">Favorite coffee</a></li>
+                    <li><a class="action" href="#">About</a></li>
+                    <li><a class="action" href="#">Mobile app</a></li>
+                    <li><a class="action" href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="theme-switch">
+                    <div class="light active">
+                        <img src="images/sun.svg" alt="sun icon">
                     </div>
-                    <div class="coffee-menu">
-                        <a class="action" href="#">
-                            Menu
-                            <img src="images/coffee-cup.svg" alt="coffee cup icon">
-                        </a>
+                    <div class="dark">
+                        <img src="images/moon.svg" alt="moon icon">
                     </div>
+                </div>
+                <div class="coffee-menu">
+                    <a class="action" href="#">
+                        Menu
+                        <img src="images/coffee-cup.svg" alt="coffee cup icon">
+                    </a>
                 </div>
             </div>
         </header>
         <main>
             <section class="hero">
-                <div class="hero-container">
-                    <div class="hero-offer">
-                        <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
-                        <p class="medium">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-                        <button class="action">Menu</button>
-                    </div>
+                <div class="hero-offer">
+                    <h1><span>Enjoy</span> premium coffee at our charming cafe</h1>
+                    <p class="medium">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                    <button class="action">Menu</button>
                 </div>
             </section>
             <section class="fav-coffee">
-                <div class="fav-coffee-container">
-                    <h2>Choose your <span>favorite</span> coffee</h2>
-                    <div class="fav-coffee-slider">
-                        <div class="slider">
-                            <button class="prev">
-                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 6.5H0.5M6.5 12.5L0.5 6.5L6.5 0.5" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <div class="row-slider">
-                                <div class="slider-content">
-                                    <div class="slider-image"></div>
-                                    <div class="slider-description">
-                                        <h3 class="name">S’mores Frappuccino</h3>
-                                        <p class="medium">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                                        <h3 class="price">$5.50</h3>
-                                    </div>
+                <h2>Choose your <span>favorite</span> coffee</h2>
+                <div class="fav-coffee-slider">
+                    <div class="slider">
+                        <button class="prev">
+                            <img src="images/arrow-left.svg" alt="previous button">
+                        </button>
+                        <div class="row-slider">
+                            <div class="slider-content">
+                                <div class="slider-image"></div>
+                                <div class="slider-description">
+                                    <h3 class="name">S’mores Frappuccino</h3>
+                                    <p class="medium">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                    <h3 class="price">$5.50</h3>
                                 </div>
                             </div>
-                            <button class="next">
-                                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.5 6.5H13M7 12.5L13 6.5L7 0.5" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
                         </div>
-                        <div class="controls">
-                            <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="40" height="4" rx="2" fill="#665F55"/>
-                            </svg>
-                            <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="40" height="4" rx="2" fill="#C1B6AD"/>
-                            </svg>
-                            <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="40" height="4" rx="2" fill="#C1B6AD"/>
-                            </svg>
-                        </div>
+                        <button class="next">
+                            <img src="images/arrow-right.svg" alt="next button">
+                        </button>
+                    </div>
+                    <div class="controls">
+                        <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="4" rx="2" fill="#665F55"/>
+                        </svg>
+                        <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="4" rx="2" fill="#C1B6AD"/>
+                        </svg>
+                        <svg width="40" height="4" viewBox="0 0 40 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="4" rx="2" fill="#C1B6AD"/>
+                        </svg>
                     </div>
                 </div>
             </section>
             <section class="about">
-                <div class="about-container">
-                    <h2>Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
-                    <div class="about-images">
-                        <div class="col-1">
-                            <img src="images/about-1.jpg" alt="Woman with a cup of coffee">
-                            <img src="images/about-2.jpg" alt="Cozy coffee cup with bokeh background">
-                        </div>
-                        <div class="col-2">
-                            <img src="images/about-3.jpg" alt="Man working with laptop and coffee">
-                            <img src="images/about-4.jpg" alt="Couple drinking coffee together">
-                        </div>
+                <h2>Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+                <div class="about-images">
+                    <div class="col-1">
+                        <img src="images/about-1.jpg" alt="Woman with a cup of coffee">
+                        <img src="images/about-2.jpg" alt="Cozy coffee cup with bokeh background">
+                    </div>
+                    <div class="col-2">
+                        <img src="images/about-3.jpg" alt="Man working with laptop and coffee">
+                        <img src="images/about-4.jpg" alt="Couple drinking coffee together">
                     </div>
                 </div>
             </section>
             <section class="mobile-app">
-                <div class="mobile-app-container">
-                    <div class="mobile-app-offer">
-                        <h2><span>Download</span> our app to start ordering</h2>
-                        <p class="medium">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-                        <div class="buttons">
-                            <a class="action" href="#">
-                                <img src="images/app-store.svg" alt="App Store logo">
-                                <div class="text">
-                                    <span class="caption">Available on the</span>
-                                    <span class="action">App Store</span>
-                                </div>
-                            </a>
-                            <a class="action" href="#">
-                                <img src="images/google-play.svg" alt="Google Play logo">
-                                <div class="text">
-                                    <span class="caption">Available on</span>
-                                    <span class="action">Google Play</span>
-                                </div>
-                            </a>
-                        </div>
+                <div class="mobile-app-offer">
+                    <h2><span>Download</span> our app to start ordering</h2>
+                    <p class="medium">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+                    <div class="buttons">
+                        <a class="action" href="#">
+                            <img src="images/app-store.svg" alt="App Store logo">
+                            <div class="text">
+                                <span class="caption">Available on the</span>
+                                <span class="action">App Store</span>
+                            </div>
+                        </a>
+                        <a class="action" href="#">
+                            <img src="images/google-play.svg" alt="Google Play logo">
+                            <div class="text">
+                                <span class="caption">Available on</span>
+                                <span class="action">Google Play</span>
+                            </div>
+                        </a>
                     </div>
-                    <img src="images/mobile-screens.png" alt="Mobile app">
                 </div>
+                <img src="images/mobile-screens.png" alt="Mobile app">
             </section>
         </main>
         <footer>
-            <div class="contacts-container">
-                <div class="contacts-offer">
-                    <h2>Sip, Savor, Smile. It’s coffee time!</h2>
-                    <div class="socials">
-                        <button><img src="images/twitter.svg" alt="twitter icon"></button>
-                        <button><img src="images/instagram.svg" alt="instagram icon"></button>
-                        <button><img src="images/facebook.svg" alt="facebook icon"></button>
-                    </div>
+            <div class="contacts-offer">
+                <h2>Sip, Savor, Smile. It’s coffee time!</h2>
+                <div class="socials">
+                    <button><img src="images/twitter.svg" alt="twitter icon"></button>
+                    <button><img src="images/instagram.svg" alt="instagram icon"></button>
+                    <button><img src="images/facebook.svg" alt="facebook icon"></button>
                 </div>
-                <div class="contacts-info">
-                    <h3>Contact us</h3>
-                    <div class="contacts">
-                        <div class="contact-item">
-                            <img src="images/pin.svg" alt="location icon">
-                            <p class="action">8558 Green Rd.,  LA</p>
-                        </div>
-                        <div class="contact-item">
-                            <img src="images/tel.svg" alt="phone icon">
-                            <p class="action">+1 (603) 555-0123</p>
-                        </div>
-                        <div class="contact-item">
-                            <img src="images/clock.svg" alt="clock icon">
-                            <p class="action">Mon–Sat: 9:00–23:00</p>
-                        </div>
+            </div>
+            <div class="contacts-info">
+                <h3>Contact us</h3>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <img src="images/pin.svg" alt="location icon">
+                        <p class="action">8558 Green Rd.,  LA</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/tel.svg" alt="phone icon">
+                        <p class="action">+1 (603) 555-0123</p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/clock.svg" alt="clock icon">
+                        <p class="action">Mon–Sat: 9:00–23:00</p>
                     </div>
                 </div>
             </div>
