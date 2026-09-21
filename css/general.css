@@ -105,8 +105,14 @@ h3 {
 html {
     scroll-behavior: smooth;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* End of Reset Styles */
 
+/* Container Styles */
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -119,6 +125,7 @@ html {
     background-color: var(--bg-page);
     color: var(--text-primary);
 }
+/* End of Container Styles */
 
 /* Header Styles */
 .logo {
@@ -141,11 +148,6 @@ header > nav > ul {
     display: flex;
     gap: 40px;
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 .header-actions {
@@ -191,4 +193,77 @@ a {
     justify-content: space-between;
     gap: 8px;
 }
+
+.coffee-menu a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    height: 28px;
+}
 /* End of Header Styles */
+
+/*Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 40px;
+    gap: 100px;
+
+    background-color: var(--bg-container);
+}
+
+.contacts-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    flex: 1;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 100px;
+    border: 1px solid var(--border-primary);
+
+    background-color: var(--bg-container);
+    cursor: pointer;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    flex: 1;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    height: 28px;
+}
+/* End of Footer Styles */
