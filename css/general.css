@@ -332,6 +332,7 @@ footer {
 
     h2 {
         font-size: 32px;
+        letter-spacing: 1px;
     }
     /* End of Responsive Text for Extra Small Screens */
 
@@ -344,4 +345,9 @@ footer {
         gap: 12px;
     }
     /* End of Header Styles for Extra Small Screens */
+
+    footer {
+        padding: 60px 16px;
+        gap: 40px;
+    }
 }

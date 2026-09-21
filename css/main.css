@@ -81,13 +81,9 @@ section {
 }
 
 .slider-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider-image img {
-    width: 100%;
+    background-image: url("../images/coffee-slider-1.png");
+    background-size: cover;
+    background-position: center;
     height: 480px;
 }
 
@@ -195,8 +191,10 @@ section {
 
 .buttons > a {
     display: flex;
+    align-items: center;
 
     width: 200px;
+    height: 64px;
     padding: 12px 20px;
     gap: 8px;
 
@@ -208,6 +206,15 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2px;
+}
+
+.buttons > a > .text > span {
+    color: var(--text-primary);
+}
+
+.buttons > a > img {
+    width: 36px;
+    height: 36px;
 }
 
 .mobile-app-image {
@@ -269,4 +276,24 @@ section {
         padding: 60px 16px;
     }
     /* End of Responsive Hero Section for Extra Small Screens */
+
+    /* Favorite Coffee Section for Extra Small Screens */
+    .slider-image {
+        height: 348px;
+    }
+
+    .prev, .next {
+        display: none;
+    }
+    /* End of Favorite Coffee Section for Extra Small Screens */
+
+    /* Responsive Mobile App Section for Extra Small Screens */
+    .mobile-app {
+        gap: 40px;
+    }
+
+    .mobile-app-image {
+        height: 348px;
+    }
+    /* End of Responsive Mobile App Section for Extra Small Screens */
 }
