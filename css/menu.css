@@ -65,7 +65,8 @@ section {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 310px));
     gap: 40px;
     width: 100%;
 }
@@ -81,6 +82,8 @@ section {
 }
 
 .menu-item img {
+    width: 310px;
+    height: 310px;
     border-radius: 40px;
 }
 
@@ -123,5 +126,11 @@ section {
         border-radius: 100px;
 
         background-color: var(--bg-page);
+    }
+}
+
+@media (max-width: 380px) {
+    .menu-tabs {
+        gap: 8px;
     }
 }
