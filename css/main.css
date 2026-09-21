@@ -11,6 +11,8 @@ section {
 /* Hero Section */
 .hero {
     background-image: url("../images/img-hero.jpg");
+    background-size: cover;
+    background-position: center;
 
     border-radius: 40px;
     padding: 100px;
@@ -109,3 +111,55 @@ section {
     gap: 12px;
 }
 /* End of Favorite Coffee Section */
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    gap: 40px;
+
+    text-align: justify;
+}
+
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.col-1, .col-2 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+    width: 100%;
+}
+
+.row-1 {
+    background-image: url("../images/about-1.jpg");
+}
+.row-2 {
+    background-image: url("../images/about-2.jpg");
+}
+.row-3 {
+    background-image: url("../images/about-3.jpg");
+}
+.row-4 {
+    background-image: url("../images/about-4.jpg");
+}
+
+.row-1, .row-2, .row-3, .row-4 {
+    background-position: center;
+    border-radius: 20px;
+}
+
+.row-1, .row-4 {
+    height: 590px;
+}
+
+.row-2, .row-3 {
+    height: 430px;
+}
+/* End of About Section */
