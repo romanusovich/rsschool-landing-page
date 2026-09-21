@@ -1,0 +1,98 @@
+section {
+    max-width: 1360px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    gap: 40px;
+    max-width: 800px;
+}
+
+.menu-tabs {
+    display: flex;
+    gap: 16px;
+}
+
+.menu-tabs button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+    padding: 8px 16px 8px 8px;
+
+    background: none;
+
+    border: 1px solid var(--border-primary);
+    border-radius: 100px;
+
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.tab-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 100px;
+    background-color: var(--border-primary);
+}
+
+.menu-tabs button.active {
+    background-color: var(--bg-container);
+}
+.menu-tabs button.active .tab-text {
+    color: var(--text-inverse);
+}
+.menu-tabs button.active .tab-icon {
+    background-color: var(--bg-page);
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: 40px;
+    width: 100%;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    
+    height: 506px;
+    
+    border: 1px solid var(--border-primary);
+    border-radius: 40px;
+}
+
+.menu-item img {
+    border-radius: 40px;
+}
+
+.menu-item-description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-grow: 1;
+    padding: 20px;
+    gap: 12px;
+}
+
+.price {
+    margin-top: auto;
+}
