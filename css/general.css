@@ -231,7 +231,7 @@ footer {
     gap: 12px;
 }
 
-.socials button {
+.socials a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -314,7 +314,7 @@ footer {
     /* End of Responsive Footer Styles for Medium Screens */
 }
 
-@media (max-width: 380px) {
+@media (max-width: 515px) {
     /* Responsive Text for Extra Small Screens */
     h1 {
         font-size: 42px;
