@@ -236,4 +236,14 @@ section {
         text-align: center;
     }
     /* End of Responsive Favorite Coffee Section */
+
+    /* Responsive About Section */
+    .about-images {
+        flex-direction: column;
+    }
+    
+    .row-2, .row-3 {
+        display: none;
+    }
+    /* End of Responsive About Section */
 }
