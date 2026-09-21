@@ -262,3 +262,11 @@ section {
     }
     /* End of Responsive Mobile App Section */
 }
+
+@media (max-width: 380px) {
+    /* Responsive Hero Section for Extra Small Screens */
+    .hero {
+        padding: 60px 16px;
+    }
+    /* End of Responsive Hero Section for Extra Small Screens */
+}
