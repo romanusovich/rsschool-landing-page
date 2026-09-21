@@ -1,0 +1,45 @@
+@media (hover: hover) {
+    /* Styles for devices that support hover */
+    nav > ul > li:hover, .coffee-menu a:hover {
+        box-shadow: inset 0 -2px 0 var(--text-primary);
+    }
+
+    .dark:hover {
+        background-color: var(--dark-border-primary);
+    }
+    .dark:hover > svg {
+        fill: var(--text-inverse);
+    }
+
+    .hero-offer a:hover > img {
+        display: block;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: var(--bg-container);
+    }
+    .prev:hover > svg, .next:hover > svg {
+        color: var(--text-inverse);
+    }
+
+    .mobile-app-offer a:hover {
+        background-color: var(--bg-container);
+    }
+    .mobile-app-offer a:hover span {
+        color: var(--text-inverse);
+    }
+    .mobile-app-offer a:hover > svg {
+        fill: var(--text-inverse);
+    }
+
+    .socials button:hover {
+        background-color: var(--text-inverse);
+    }
+    .socials button:hover > svg {
+        color: var(--text-primary);
+    }
+
+    .contact-item:hover p {
+        box-shadow: inset 0 -2px 0 var(--text-inverse);
+    }
+}

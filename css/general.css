@@ -197,6 +197,12 @@ header > nav > ul {
 .light.active {
     background-color: var(--text-accent);
 }
+.light.active > svg {
+    fill: var(--text-inverse);
+}
+.dark > svg {
+    fill: var(--text-primary);
+}
 
 .coffee-menu {
     display: flex;
@@ -260,6 +266,10 @@ footer {
     cursor: pointer;
 }
 
+.socials svg {
+    color: var(--text-inverse);
+}
+
 .contacts-info {
     display: flex;
     flex-direction: column;
@@ -280,6 +290,7 @@ footer {
     gap: 8px;
 
     height: 28px;
+    cursor: pointer;
 }
 /* End of Footer Styles */
 

@@ -29,7 +29,7 @@ section {
     width: 100%;
 }
 
-.hero-offer > button {
+.hero-offer > a {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -41,10 +41,11 @@ section {
     border: none;
 
     background-color: var(--bg-page);
+    color: var(--text-primary);
     cursor: pointer;
 }
 
-.hero-offer > button img {
+.hero-offer > a img {
     display: none;
 }
 /* End of Hero Section */
@@ -212,9 +213,8 @@ section {
     color: var(--text-primary);
 }
 
-.buttons > a > img {
-    width: 36px;
-    height: 36px;
+.buttons > a > svg {
+    fill: var(--text-primary);
 }
 
 .mobile-app-image {
