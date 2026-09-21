@@ -284,6 +284,7 @@ footer {
 /* End of Footer Styles */
 
 @media (max-width: 768px) {
+    /* Responsive Header Styles */
     .burger-menu {
         display: flex;
         align-items: center;
@@ -309,4 +310,5 @@ footer {
     header > nav, .coffee-menu {
         display: none;
     }
+    /* End of Responsive Header Styles */
 }

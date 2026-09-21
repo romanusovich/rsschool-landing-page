@@ -29,6 +29,10 @@ section {
 }
 
 .hero-offer > button {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
     width: 200px;
     padding: 20px 78px;
 
@@ -37,6 +41,10 @@ section {
 
     background-color: var(--bg-page);
     cursor: pointer;
+}
+
+.hero-offer > button img {
+    display: none;
 }
 /* End of Hero Section */
 
@@ -210,3 +218,17 @@ section {
     flex: 1;
 }
 /* End of Mobile App Section */
+
+/*==========================================================================================*/
+
+@media (max-width: 768px) {
+    /* Responsive Hero Section */
+    .hero {
+        padding: 100px 60px;
+    }
+
+    .hero-offer > button img {
+        display: block;
+    }
+    /* End of Responsive Hero Section */
+}
