@@ -124,10 +124,9 @@ section {
 .about {
     display: flex;
     flex-direction: column;
-    align-items: justify;
     gap: 40px;
 
-    text-align: justify;
+    text-align: left;
 }
 
 .about-images {
@@ -231,4 +230,10 @@ section {
         display: block;
     }
     /* End of Responsive Hero Section */
+
+    /* Responsive Favorite Coffee Section */
+    .fav-coffee {
+        text-align: center;
+    }
+    /* End of Responsive Favorite Coffee Section */
 }
