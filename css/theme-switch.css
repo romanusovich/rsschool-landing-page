@@ -1,0 +1,20 @@
+.container.light-theme {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+.container.light-theme span {
+    color: var(--text-accent);
+    font-style: Italic;
+}
+
+.container.light-theme .hero, .container.light-theme footer {
+    color: var(--text-inverse);
+}
+
+.light.active {
+    background-color: var(--text-accent);
+}
+.light.active > svg {
+    fill: var(--text-inverse);
+}

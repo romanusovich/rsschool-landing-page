@@ -122,20 +122,6 @@ a {
     flex-direction: column;
     padding: 20px 40px 40px;
 }
-
-.container.light-theme {
-    background-color: var(--bg-page);
-    color: var(--text-primary);
-}
-
-.container.light-theme span {
-    color: var(--text-accent);
-    font-style: Italic;
-}
-
-.container.light-theme .hero, .container.light-theme footer {
-    color: var(--text-inverse);
-}
 /* End of Container Styles */
 
 /* Header Styles */
@@ -194,12 +180,6 @@ header > nav > ul {
     cursor: pointer;
 }
 
-.light.active {
-    background-color: var(--text-accent);
-}
-.light.active > svg {
-    fill: var(--text-inverse);
-}
 .dark > svg {
     fill: var(--text-primary);
 }
