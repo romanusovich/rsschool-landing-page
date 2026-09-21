@@ -163,3 +163,50 @@ section {
     height: 430px;
 }
 /* End of About Section */
+
+/* Mobile App Section */
+.mobile-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.mobile-app-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons > a {
+    display: flex;
+
+    width: 200px;
+    padding: 12px 20px;
+    gap: 8px;
+
+    border: 1px solid var(--border-inverse);
+    border-radius: 100px;
+}
+
+.buttons > a > .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mobile-app-image {
+    width: 100%;
+    height: 630px;
+    background-image: url("../images/mobile-screens.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+/* End of Mobile App Section */
