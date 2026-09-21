@@ -95,6 +95,8 @@ h3 {
 }
 /* End of General Styles */
 
+/*================================================================================*/
+
 /* Reset Styles */
 * {
     box-sizing: border-box;
@@ -168,7 +170,7 @@ header > nav > ul {
 .theme-switch {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 8px;
 
     padding: 4px;
@@ -209,6 +211,10 @@ header > nav > ul {
     gap: 4px;
 
     height: 28px;
+}
+
+.burger-menu {
+    display: none;
 }
 /* End of Header Styles */
 
@@ -276,3 +282,31 @@ footer {
     height: 28px;
 }
 /* End of Footer Styles */
+
+@media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        border: 1px solid var(--border-inverse);
+        border-radius: 100px;
+    }
+
+    .theme-switch {
+        width: 104px;
+        height: 52px;
+    }
+
+    .light, .dark {
+        width: 44px;
+        height: 44px;
+    }
+
+    header > nav, .coffee-menu {
+        display: none;
+    }
+}
