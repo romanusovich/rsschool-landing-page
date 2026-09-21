@@ -311,12 +311,36 @@ footer {
         display: none;
     }
     /* End of Responsive Header Styles */
+}
 
-    /* Responsive Footer Styles */
+@media (max-width: 992px) {
+    /* Responsive Footer Styles for Medium Screens */
     footer {
         flex-direction: column;
         align-items: flex-start;
         padding: 100px 60px;
     }
-    /* End of Responsive Footer Styles */
+    /* End of Responsive Footer Styles for Medium Screens */
+}
+
+@media (max-width: 380px) {
+    /* Responsive Text for Extra Small Screens */
+    h1 {
+        font-size: 42px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+    /* End of Responsive Text for Extra Small Screens */
+
+    .container {
+        padding: 20px 16px 40px;
+    }
+
+    /* Header Styles for Extra Small Screens */
+    .header-actions {
+        gap: 12px;
+    }
+    /* End of Header Styles for Extra Small Screens */
 }
