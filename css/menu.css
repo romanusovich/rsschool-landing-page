@@ -87,12 +87,41 @@ section {
 .menu-item-description {
     display: flex;
     flex-direction: column;
-    text-align: left;
     flex-grow: 1;
+    text-align: left;
+    
     padding: 20px;
     gap: 12px;
 }
 
 .price {
     margin-top: auto;
+}
+
+.load-more {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-grid {
+        padding: 0 14px;
+    }
+
+    .menu-item:nth-child(n + 5) {
+        display: none;
+    }
+
+    .load-more {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 60px;
+        height: 60px;
+
+        border: 1px solid var(--border-primary);
+        border-radius: 100px;
+
+        background-color: var(--bg-page);
+    }
 }
