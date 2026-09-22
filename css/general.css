@@ -1,0 +1,344 @@
+/* General Styles */
+:root {
+    --text-primary: #403F3D;
+    --text-inverse: #E1D4C9;
+    --text-accent: #B0907A;
+    --bg-page: #E1D4C9;
+    --bg-container: #665F55;
+    --bg-overlay: #403F3DCC;
+    --border-primary: #C1B6AD;
+    --border-inverse: #665F55;
+
+    --dark-text-primary: #E1D4C9;
+    --dark-text-inverse: #E1D4C9;
+    --dark-text-accent: #B0907A;
+    --dark-bg-page: #292826;
+    --dark-bg-container: #403F3D;
+    --dark-bg-overlay: #292826CC;
+    --dark-border-primary: #665F55;
+    --dark-border-inverse: #C1B6AD;
+
+    --backdrop-overlay: #403F3DCC;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 72px;
+    line-height: 105%;
+    letter-spacing: 2px;
+}
+
+h1.accent {
+    font-style: Italic;
+}
+
+h2 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 60px;
+    line-height: 125%;
+    letter-spacing: 2px;
+}
+
+h2.accent {
+    font-style: Italic;
+}
+
+h3 {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0%;
+}
+
+.medium {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.caption {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+.action {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.burger-link {
+    font-family: Inter;
+    font-weight: 600;
+    font-style: Semi Bold;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: 0%;
+}
+/* End of General Styles */
+
+/*================================================================================*/
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* End of Reset Styles */
+
+/* Container Styles */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px 40px;
+}
+/* End of Container Styles */
+
+/* Header Styles */
+.logo {
+    display: flex;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+header > nav {
+    margin-right: 40px;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.header-actions {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+
+    padding: 4px;
+    width: 88px;
+    height: 44px;
+    
+    border: 1px solid var(--border-primary);
+    border-radius: 100px;
+}
+
+.light, .dark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1px;
+    width: 36px;
+    height: 36px;
+
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.dark > svg {
+    fill: var(--text-primary);
+}
+
+.coffee-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.coffee-menu a {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    height: 28px;
+}
+
+.burger-menu {
+    display: none;
+}
+/* End of Header Styles */
+
+/*Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 100px;
+    padding: 100px;
+    border-radius: 40px;
+    gap: 100px;
+
+    background-color: var(--bg-container);
+}
+
+.contacts-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    flex: 1;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 100px;
+    border: 1px solid var(--border-primary);
+
+    background-color: var(--bg-container);
+    cursor: pointer;
+}
+
+.socials svg {
+    color: var(--text-inverse);
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    flex: 1;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    height: 28px;
+    cursor: pointer;
+}
+/* End of Footer Styles */
+
+@media (max-width: 768px) {
+    /* Responsive Header Styles */
+    .burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 44px;
+
+        border: 1px solid var(--border-inverse);
+        border-radius: 100px;
+    }
+
+    .theme-switch {
+        width: 104px;
+        height: 52px;
+    }
+
+    .light, .dark {
+        width: 44px;
+        height: 44px;
+    }
+
+    header > nav, .coffee-menu {
+        display: none;
+    }
+    /* End of Responsive Header Styles */
+}
+
+@media (max-width: 992px) {
+    /* Responsive Footer Styles for Medium Screens */
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 60px;
+    }
+    /* End of Responsive Footer Styles for Medium Screens */
+}
+
+@media (max-width: 515px) {
+    /* Responsive Text for Extra Small Screens */
+    h1 {
+        font-size: 42px;
+        line-height: 115%;
+    }
+
+    h2 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+    /* End of Responsive Text for Extra Small Screens */
+
+    .container {
+        padding: 20px 16px 40px;
+    }
+
+    /* Header Styles for Extra Small Screens */
+    .header-actions {
+        gap: 12px;
+    }
+    /* End of Header Styles for Extra Small Screens */
+
+    footer {
+        padding: 60px 16px;
+        gap: 40px;
+    }
+}
