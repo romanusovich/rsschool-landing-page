@@ -43,7 +43,8 @@ section {
     cursor: pointer;
 }
 
-.hero-offer > a img {
+.hero-offer > a > svg {
+    flex: 0 0 20px;
     display: none;
 }
 /* End of Hero Section */

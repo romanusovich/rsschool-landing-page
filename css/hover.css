@@ -4,62 +4,118 @@
     }
 
     /* Styles for devices that support hover */
-    nav > ul > li:hover, .coffee-menu a:hover {
+    .menu-item:hover img {
+        transform: scale(1);
+    }
+    /* Hover styles for light and dark themes */
+    body.light-theme nav > ul > li:hover, body.light-theme .coffee-menu a:hover {
         box-shadow: inset 0 -2px 0 var(--text-primary);
     }
-
-    .dark:hover {
+    
+    body.light-theme .dark:hover {
         background-color: var(--dark-border-primary);
     }
-    .dark:hover > svg {
+    body.light-theme .dark:hover > svg {
         fill: var(--text-inverse);
     }
-    .light:hover {
-        background-color: var(--text-accent);
+    
+    
+    body.light-theme .hero-offer a:hover > svg {
+        display: inline;
+        color: var(--text-primary);
     }
-    .light:hover > svg {
-        fill: var(--text-inverse);
-    }
-
-    .hero-offer a:hover > img {
-        display: block;
-    }
-
-    .prev:hover, .next:hover {
+    body.light-theme .prev:hover, body.light-theme .next:hover {
         background-color: var(--bg-container);
     }
-    .prev:hover > svg, .next:hover > svg {
+    body.light-theme .prev:hover > svg, body.light-theme .next:hover > svg {
         color: var(--text-inverse);
     }
 
-    .mobile-app-offer a:hover {
+    body.light-theme .mobile-app-offer a:hover {
         background-color: var(--bg-container);
     }
-    .mobile-app-offer .buttons a:hover span {
+    body.light-theme .mobile-app-offer .buttons a:hover span {
         color: var(--text-inverse);
     }
-    .mobile-app-offer .buttons a:hover svg {
+    body.light-theme .mobile-app-offer .buttons a:hover svg {
         fill: var(--text-inverse);
     }
 
-    .socials a:hover {
+    body.light-theme .socials a:hover {
         background-color: var(--text-inverse);
     }
-    .socials a:hover svg {
+    body.light-theme .socials a:hover svg {
         color: var(--text-primary);
     }
 
-    .contact-item:hover a {
+    body.light-theme .contact-item:hover a {
         box-shadow: inset 0 -2px 0 var(--text-inverse);
     }
 
-    .menu-tabs button:hover {
+    body.light-theme .menu-tabs button:hover {
     background-color: var(--bg-container);
     }
-    .menu-tabs button:hover .tab-text {
+    body.light-theme .menu-tabs button:hover .tab-text {
         color: var(--text-inverse);
     }
-    .menu-tabs button:hover .tab-icon {
+    body.light-theme .menu-tabs button:hover .tab-icon {
         background-color: var(--bg-page);
+    }    
+    /* End of hover styles for light and dark themes */
+
+    /* Hover styles for dark theme */
+    body.dark-theme nav > ul > li:hover, .coffee-menu a:hover {
+        box-shadow: inset 0 -2px 0 var(--dark-text-primary);
     }
+
+    body.dark-theme .light:hover {
+        background-color: var(--dark-bg-container);
+    }
+    body.dark-theme .light:hover > svg {
+        fill: var(--dark-text-inverse);
+    }
+
+    body.dark-theme .hero-offer a:hover > svg {
+        display: inline;
+        color: var(--dark-text-primary);
+    }
+    
+    body.dark-theme .prev:hover, body.dark-theme .next:hover {
+        background-color: var(--dark-bg-container);
+    }
+    body.dark-theme .prev:hover > svg, body.dark-theme .next:hover > svg {
+        color: var(--dark-text-inverse);
+    }
+
+    body.dark-theme .mobile-app-offer a:hover {
+        background-color: var(--dark-bg-container);
+    }
+    body.dark-theme .mobile-app-offer .buttons a:hover span {
+        color: var(--dark-text-inverse);
+    }
+    body.dark-theme .mobile-app-offer .buttons a:hover svg {
+        fill: var(--dark-text-inverse);
+    }
+
+    body.dark-theme .socials a:hover {
+        background-color: var(--dark-bg-page);
+    }
+    body.dark-theme .socials a:hover svg {
+        color: var(--dark-text-primary);
+    }
+
+    body.dark-theme .contact-item:hover a {
+        box-shadow: inset 0 -2px 0 var(--dark-text-inverse);
+    }
+
+    body.dark-theme .menu-tabs button:hover {
+    background-color: var(--dark-bg-container);
+    }
+    body.dark-theme .menu-tabs button:hover .tab-text {
+        color: var(--dark-text-inverse);
+    }
+    body.dark-theme .menu-tabs button:hover .tab-icon {
+        background-color: var(--dark-bg-page);
+    }
+    /* End of hover styles for dark theme */
 }
