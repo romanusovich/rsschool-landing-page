@@ -1,4 +1,8 @@
 @media (hover: hover) {
+    * {
+        transition: all 0.3s ease;
+    }
+
     /* Styles for devices that support hover */
     nav > ul > li:hover, .coffee-menu a:hover {
         box-shadow: inset 0 -2px 0 var(--text-primary);
@@ -8,6 +12,12 @@
         background-color: var(--dark-border-primary);
     }
     .dark:hover > svg {
+        fill: var(--text-inverse);
+    }
+    .light:hover {
+        background-color: var(--text-accent);
+    }
+    .light:hover > svg {
         fill: var(--text-inverse);
     }
 
@@ -25,17 +35,17 @@
     .mobile-app-offer a:hover {
         background-color: var(--bg-container);
     }
-    .mobile-app-offer a:hover span {
+    .mobile-app-offer .buttons a:hover span {
         color: var(--text-inverse);
     }
-    .mobile-app-offer a:hover > svg {
+    .mobile-app-offer .buttons a:hover svg {
         fill: var(--text-inverse);
     }
 
     .socials a:hover {
         background-color: var(--text-inverse);
     }
-    .socials a:hover > svg {
+    .socials a:hover svg {
         color: var(--text-primary);
     }
 

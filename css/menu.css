@@ -34,11 +34,9 @@ section {
 
     background: none;
 
-    border: 1px solid var(--border-primary);
     border-radius: 100px;
 
     cursor: pointer;
-    color: var(--text-primary);
 }
 
 .tab-icon {
@@ -50,17 +48,6 @@ section {
     height: 30px;
 
     border-radius: 100px;
-    background-color: var(--border-primary);
-}
-
-.menu-tabs button.active {
-    background-color: var(--bg-container);
-}
-.menu-tabs button.active .tab-text {
-    color: var(--text-inverse);
-}
-.menu-tabs button.active .tab-icon {
-    background-color: var(--bg-page);
 }
 
 .menu-grid {
@@ -76,8 +63,8 @@ section {
     flex-direction: column;
     
     height: 506px;
+    overflow: hidden;
     
-    border: 1px solid var(--border-primary);
     border-radius: 40px;
 }
 
@@ -121,11 +108,8 @@ section {
 
         width: 60px;
         height: 60px;
-
-        border: 1px solid var(--border-primary);
+        
         border-radius: 100px;
-
-        background-color: var(--bg-page);
     }
 }
 

@@ -40,8 +40,6 @@ section {
     border-radius: 100px;
     border: none;
 
-    background-color: var(--bg-page);
-    color: var(--text-primary);
     cursor: pointer;
 }
 
@@ -105,8 +103,6 @@ section {
     width: 60px;
     height: 60px;
     border-radius: 100px;
-    border: 1px solid var(--border-inverse);
-    background-color: var(--bg-page);
     cursor: pointer;
 }
 
@@ -199,7 +195,6 @@ section {
     padding: 12px 20px;
     gap: 8px;
 
-    border: 1px solid var(--border-inverse);
     border-radius: 100px;
 }
 
@@ -207,14 +202,6 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2px;
-}
-
-.buttons > a > .text > span {
-    color: var(--text-primary);
-}
-
-.buttons > a > svg {
-    fill: var(--text-primary);
 }
 
 .mobile-app-image {

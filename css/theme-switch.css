@@ -1,20 +1,234 @@
-.container.light-theme {
-    background-color: var(--bg-page);
-    color: var(--text-primary);
-}
-
-.container.light-theme span {
-    color: var(--text-accent);
-    font-style: Italic;
-}
-
-.container.light-theme .hero, .container.light-theme footer {
-    color: var(--text-inverse);
-}
-
+/* Theme switch styles */
 .light.active {
     background-color: var(--text-accent);
 }
 .light.active > svg {
     fill: var(--text-inverse);
 }
+.dark.active {
+    background-color: var(--dark-border-primary);
+}
+.dark.active > svg {
+    fill: var(--text-inverse);
+}
+/* End of theme switch styles */
+
+/* Light theme styles */
+body.light-theme {
+    background-color: var(--bg-page);
+}
+
+body.light-theme .container {
+    color: var(--text-primary);
+}
+
+body.light-theme span {
+    color: var(--text-accent);
+    font-style: Italic;
+}
+
+body.light-theme .theme-switch {
+    border: 1px solid var(--border-primary);
+}
+
+body.light-theme .coffee-menu svg {
+    color: var(--text-primary);
+}
+
+body.light-theme .burger-menu {
+    border: 1px solid var(--border-inverse);
+}
+
+body.light-theme .hero {
+    color: var(--text-inverse);
+}
+
+body.light-theme .hero-offer > a {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+body.light-theme .prev, body.light-theme .next {
+    border: 1px solid var(--border-inverse);
+    background-color: var(--bg-page);
+}
+
+body.light-theme .prev > svg, body.light-theme .next > svg {
+    color: var(--text-primary);
+}
+
+body.light-theme .controls svg.active {
+    fill: var(--border-inverse);
+}
+
+body.light-theme .controls svg {
+    fill: var(--border-primary);
+}
+
+body.light-theme .buttons a {
+    border: 1px solid var(--border-inverse);
+}
+
+body.light-theme .buttons a span {
+    color: var(--text-primary);
+}
+
+body.light-theme .buttons a svg {
+    fill: var(--text-primary);
+}
+
+body.light-theme footer {
+    background-color: var(--bg-container);
+    color: var(--text-inverse);
+}
+
+body.light-theme .socials a {
+    border: 1px solid var(--border-primary);
+    background-color: var(--bg-container);
+}
+
+body.light-theme .socials svg {
+    color: var(--text-inverse);
+}
+/* End of light theme styles */
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: var(--dark-bg-page);
+}
+
+body.dark-theme .container {
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme span {
+    color: var(--dark-text-accent);
+    font-style: Italic;
+}
+
+body.dark-theme .theme-switch {
+    border: 1px solid var(--dark-border-primary);
+}
+
+body.dark-theme .coffee-menu svg {
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .burger-menu {
+    border: 1px solid var(--dark-border-inverse);
+}
+
+body.dark-theme .hero {
+    color: var(--dark-text-inverse);
+}
+
+body.dark-theme .hero-offer > a {
+    background-color: var(--dark-bg-page);
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .prev, body.dark-theme .next {
+    border: 1px solid var(--dark-border-inverse);
+    background-color: var(--dark-bg-page);
+}
+
+body.dark-theme .prev > svg, body.dark-theme .next > svg {
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .controls svg.active {
+    fill: var(--dark-border-inverse);
+}
+
+body.dark-theme .controls svg {
+    fill: var(--dark-border-primary);
+}
+
+body.dark-theme .buttons a {
+    border: 1px solid var(--dark-border-inverse);
+}
+
+body.dark-theme .buttons a span {
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .buttons a svg {
+    fill: var(--dark-text-primary);
+}
+
+body.dark-theme footer {
+    background-color: var(--dark-bg-container);
+    color: var(--dark-text-inverse);
+}
+
+body.dark-theme .socials a {
+    border: 1px solid var(--dark-border-primary);
+    background-color: var(--dark-bg-container);
+}
+
+body.dark-theme .socials svg {
+    color: var(--dark-text-inverse);
+}
+/* End of dark theme styles */
+
+/* Menu light theme styles */
+body.light-theme .menu-tabs button {
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+}
+
+body.light-theme .tab-icon {
+    background-color: var(--border-primary);
+}
+
+body.light-theme .menu-tabs button.active {
+    border-color: var(--bg-container);
+    background-color: var(--bg-container);
+}
+body.light-theme .menu-tabs button.active .tab-text {
+    color: var(--text-inverse);
+}
+body.light-theme .menu-tabs button.active .tab-icon {
+    background-color: var(--bg-page);
+}
+
+body.light-theme .menu-item {
+    border: 1px solid var(--border-primary);
+}
+
+body.light-theme .load-more {
+    border: 1px solid var(--border-primary);
+    background-color: var(--bg-page);
+}
+/* End of menu light theme styles */
+
+/* Menu dark theme styles */
+body.dark-theme .menu-tabs button {
+    border: 1px solid var(--dark-border-primary);
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .tab-icon {
+    background-color: var(--dark-border-primary);
+}
+
+body.dark-theme .menu-tabs button.active {
+    border-color: var(--dark-bg-container);
+    background-color: var(--dark-bg-container);
+}
+body.dark-theme .menu-tabs button.active .tab-text {
+    color: var(--dark-text-inverse);
+}
+body.dark-theme .menu-tabs button.active .tab-icon {
+    background-color: var(--dark-bg-page);
+}
+
+body.dark-theme .menu-item {
+    border: 1px solid var(--dark-border-primary);
+}
+
+body.dark-theme .load-more {
+    border: 1px solid var(--dark-border-primary);
+    background-color: var(--dark-bg-page);
+}
+/* End of menu dark theme styles */

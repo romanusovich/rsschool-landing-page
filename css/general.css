@@ -163,7 +163,6 @@ header > nav > ul {
     width: 88px;
     height: 44px;
     
-    border: 1px solid var(--border-primary);
     border-radius: 100px;
 }
 
@@ -180,6 +179,9 @@ header > nav > ul {
     cursor: pointer;
 }
 
+.light > svg {
+    fill: var(--dark-text-primary);
+}
 .dark > svg {
     fill: var(--text-primary);
 }
@@ -214,8 +216,6 @@ footer {
     padding: 100px;
     border-radius: 40px;
     gap: 100px;
-
-    background-color: var(--bg-container);
 }
 
 .contacts-offer {
@@ -240,14 +240,8 @@ footer {
     height: 60px;
 
     border-radius: 100px;
-    border: 1px solid var(--border-primary);
-
-    background-color: var(--bg-container);
+    
     cursor: pointer;
-}
-
-.socials svg {
-    color: var(--text-inverse);
 }
 
 .contacts-info {
@@ -284,7 +278,6 @@ footer {
         width: 44px;
         height: 44px;
 
-        border: 1px solid var(--border-inverse);
         border-radius: 100px;
     }
 
