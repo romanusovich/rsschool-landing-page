@@ -35,8 +35,12 @@ body.light-theme .coffee-menu svg {
     color: var(--text-primary);
 }
 
-body.light-theme .burger-menu {
+body.light-theme .burger-menu-button {
     border: 1px solid var(--border-inverse);
+}
+
+body.light-theme .burger-menu {
+    background-color: var(--bg-page);
 }
 
 body.light-theme .hero {
@@ -114,8 +118,12 @@ body.dark-theme .coffee-menu svg {
     color: var(--dark-text-primary);
 }
 
-body.dark-theme .burger-menu {
+body.dark-theme .burger-menu-button {
     border: 1px solid var(--dark-border-inverse);
+}
+
+body.dark-theme .burger-menu {
+    background-color: var(--dark-bg-page);
 }
 
 body.dark-theme .hero {
