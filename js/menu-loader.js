@@ -17,7 +17,7 @@ const products = loadMenuJSON();
 const menuContainer = document.querySelector('.menu-grid');
 
 products.then(menu => {
-    menu.forEach((item, index) => {
+    menu.forEach(item => {
         const menuItem = document.createElement('div');
         menuItem.classList.add('menu-item');
         menuItem.dataset.category = item.category;
@@ -35,4 +35,4 @@ products.then(menu => {
         `;
         menuContainer.appendChild(menuItem);
     });
-});
+}).then(() => switchTab('coffee'));
