@@ -60,7 +60,23 @@
     }
     body.light-theme .menu-tabs button:hover .tab-icon {
         background-color: var(--bg-page);
-    }    
+    }
+    
+    body.light-theme .modal-size-tab:hover, body.light-theme .modal-additives-tab:hover {
+        background-color: var(--bg-container);
+        border: 1px solid var(--border-inverse);
+        color: var(--text-inverse);
+    }   
+    body.light-theme .modal-size-tab:hover .marker, body.light-theme .modal-additives-tab:hover .marker {
+        background-color: var(--bg-page);
+        color: var(--text-primary);
+    }      
+
+    body.light-theme .modal-close:hover {
+        background-color: var(--bg-container);
+        border: 1px solid var(--border-inverse);
+        color: var(--text-inverse);
+    }
     /* End of hover styles for light and dark themes */
 
     /* Hover styles for dark theme */
@@ -116,6 +132,22 @@
     }
     body.dark-theme .menu-tabs button:hover .tab-icon {
         background-color: var(--dark-bg-page);
+    }
+
+    body.dark-theme .modal-size-tab:hover, body.dark-theme .modal-additives-tab:hover {
+        background-color: var(--dark-bg-container);
+        border: 1px solid var(--dark-border-inverse);
+        color: var(--dark-text-inverse);
+    }   
+    body.dark-theme .modal-size-tab:hover .marker, body.dark-theme .modal-additives-tab:hover .marker {
+        background-color: var(--dark-bg-page);
+        color: var(--dark-text-primary);
+    }  
+
+    body.dark-theme .modal-close:hover {
+        background-color: var(--dark-bg-container);
+        border: 1px solid var(--dark-border-inverse);
+        color: var(--dark-text-inverse);
     }
     /* End of hover styles for dark theme */
 }

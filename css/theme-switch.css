@@ -35,8 +35,12 @@ body.light-theme .coffee-menu svg {
     color: var(--text-primary);
 }
 
-body.light-theme .burger-menu {
+body.light-theme .burger-menu-button {
     border: 1px solid var(--border-inverse);
+}
+
+body.light-theme .burger-menu {
+    background-color: var(--bg-page);
 }
 
 body.light-theme .hero {
@@ -48,12 +52,12 @@ body.light-theme .hero-offer a {
     color: var(--text-primary);
 }
 
-body.light-theme .prev, body.light-theme .next {
+body.light-theme .prev, body.light-theme .next, body.light-theme .load-more {
     border: 1px solid var(--border-inverse);
     background-color: var(--bg-page);
 }
 
-body.light-theme .prev > svg, body.light-theme .next > svg {
+body.light-theme .prev > svg, body.light-theme .next > svg, body.light-theme .load-more > svg {
     color: var(--text-primary);
 }
 
@@ -75,6 +79,44 @@ body.light-theme .buttons a span {
 
 body.light-theme .buttons a svg {
     fill: var(--text-primary);
+}
+
+body.light-theme .modal-overlay {
+    background-color: var(--bg-overlay);
+}
+
+body.light-theme .menu-item-modal {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+body.light-theme .modal-size-tab, body.light-theme .modal-additives-tab {
+    background-color: var(--bg-page);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+}
+body.light-theme .modal-size-tab.active, body.light-theme .modal-additives-tab.active {
+    background-color: var(--bg-container);
+    border: 1px solid var(--border-inverse);
+    color: var(--text-inverse);
+}
+body.light-theme .modal-size-tab .marker, body.light-theme .modal-additives-tab .marker {
+    background-color: var(--bg-container);
+    color: var(--text-inverse);
+}
+body.light-theme .modal-size-tab.active .marker, body.light-theme .modal-additives-tab.active .marker {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+}
+
+body.light-theme .modal-alert {
+    border-top: 1px solid var(--border-primary);
+}
+
+body.light-theme .modal-close {
+    background-color: var(--bg-page);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
 }
 
 body.light-theme footer {
@@ -114,8 +156,12 @@ body.dark-theme .coffee-menu svg {
     color: var(--dark-text-primary);
 }
 
-body.dark-theme .burger-menu {
+body.dark-theme .burger-menu-button {
     border: 1px solid var(--dark-border-inverse);
+}
+
+body.dark-theme .burger-menu {
+    background-color: var(--dark-bg-page);
 }
 
 body.dark-theme .hero {
@@ -127,12 +173,12 @@ body.dark-theme .hero-offer a {
     color: var(--dark-text-primary);
 }
 
-body.dark-theme .prev, body.dark-theme .next {
+body.dark-theme .prev, body.dark-theme .next, body.dark-theme .load-more {
     border: 1px solid var(--dark-border-inverse);
     background-color: var(--dark-bg-page);
 }
 
-body.dark-theme .prev > svg, body.dark-theme .next > svg {
+body.dark-theme .prev > svg, body.dark-theme .next > svg, body.dark-theme .load-more > svg {
     color: var(--dark-text-primary);
 }
 
@@ -154,6 +200,44 @@ body.dark-theme .buttons a span {
 
 body.dark-theme .buttons a svg {
     fill: var(--dark-text-primary);
+}
+
+body.dark-theme .modal-overlay {
+    background-color: var(--bg-overlay);
+}
+
+body.dark-theme .menu-item-modal {
+    background-color: var(--dark-bg-page);
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .modal-size-tab, body.dark-theme .modal-additives-tab {
+    background-color: var(--dark-bg-page);
+    border: 1px solid var(--dark-border-primary);
+    color: var(--dark-text-primary);
+}
+body.dark-theme .modal-size-tab.active, body.dark-theme .modal-additives-tab.active {
+    background-color: var(--dark-bg-container);
+    border: 1px solid var(--dark-border-inverse);
+    color: var(--dark-text-inverse);
+}
+body.dark-theme .modal-size-tab .marker, body.dark-theme .modal-additives-tab .marker {
+    background-color: var(--dark-bg-container);
+    color: var(--dark-text-inverse);
+}
+body.dark-theme .modal-size-tab.active .marker, body.dark-theme .modal-additives-tab.active .marker {
+    background-color: var(--dark-bg-page);
+    color: var(--dark-text-primary);
+}
+
+body.dark-theme .modal-alert {
+    border-top: 1px solid var(--dark-border-primary);
+}
+
+body.dark-theme .modal-close {
+    background-color: var(--dark-bg-page);
+    border: 1px solid var(--dark-border-primary);
+    color: var(--dark-text-primary);
 }
 
 body.dark-theme footer {
