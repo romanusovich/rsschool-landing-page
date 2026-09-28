@@ -16,3 +16,11 @@ burgerMenuLinks.forEach(link => {
         document.body.classList.remove('no-scroll');
     });
 });
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && burgerMenu.classList.contains('active')) {
+        burgerMenuButton.classList.remove('active');
+        burgerMenu.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+    }
+});
