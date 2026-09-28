@@ -35,4 +35,9 @@ products.then(menu => {
         `;
         menuContainer.appendChild(menuItem);
     });
-}).then(() => switchTab('coffee'));
+})
+    .then(() => switchTab('coffee'))
+    .then(() => {
+    const coffeeItems = document.querySelectorAll('.menu-item[data-category="coffee"]');
+    updateMenuItems(coffeeItems);
+});

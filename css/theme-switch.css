@@ -52,12 +52,12 @@ body.light-theme .hero-offer a {
     color: var(--text-primary);
 }
 
-body.light-theme .prev, body.light-theme .next {
+body.light-theme .prev, body.light-theme .next, body.light-theme .load-more {
     border: 1px solid var(--border-inverse);
     background-color: var(--bg-page);
 }
 
-body.light-theme .prev > svg, body.light-theme .next > svg {
+body.light-theme .prev > svg, body.light-theme .next > svg, body.light-theme .load-more > svg {
     color: var(--text-primary);
 }
 
@@ -135,12 +135,12 @@ body.dark-theme .hero-offer a {
     color: var(--dark-text-primary);
 }
 
-body.dark-theme .prev, body.dark-theme .next {
+body.dark-theme .prev, body.dark-theme .next, body.dark-theme .load-more {
     border: 1px solid var(--dark-border-inverse);
     background-color: var(--dark-bg-page);
 }
 
-body.dark-theme .prev > svg, body.dark-theme .next > svg {
+body.dark-theme .prev > svg, body.dark-theme .next > svg, body.dark-theme .load-more > svg {
     color: var(--dark-text-primary);
 }
 

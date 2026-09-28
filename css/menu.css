@@ -68,6 +68,10 @@ section {
     border-radius: 40px;
 }
 
+.menu-item.inactive {
+    display: none;
+}
+
 .menu-item-image {
     width: 310px;
     height: 310px;
@@ -94,17 +98,13 @@ section {
     margin-top: auto;
 }
 
-.load-more {
+.load-more.inactive {
     display: none;
 }
 
 @media (max-width: 768px) {
     .menu-grid {
         padding: 0 14px;
-    }
-
-    .menu-item:nth-child(n + 5) {
-        display: none;
     }
 
     .load-more {
