@@ -33,11 +33,8 @@ products.then(menu => {
                 <h3 class="price">$${item.price}</h3>
             </div>
         `;
+        menuItem.addEventListener('click', () => openModal(item));
         menuContainer.appendChild(menuItem);
     });
 })
-    .then(() => switchTab('coffee'))
-    .then(() => {
-    const coffeeItems = document.querySelectorAll('.menu-item[data-category="coffee"]');
-    updateMenuItems(coffeeItems);
-});
+    .then(() => switchTab('coffee'));

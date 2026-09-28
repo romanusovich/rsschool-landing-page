@@ -122,6 +122,10 @@ a {
     flex-direction: column;
     padding: 20px 40px 40px;
 }
+
+body.no-scroll {
+    overflow: hidden;
+}
 /* End of Container Styles */
 
 /* Header Styles */
@@ -296,10 +300,6 @@ footer {
 /* End of Footer Styles */
 
 @media (max-width: 768px) {
-    body.no-scroll {
-        overflow: hidden;
-    }
-
     /* Responsive Header Styles */
     .burger-menu-button {
         display: flex;

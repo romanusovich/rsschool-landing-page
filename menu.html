@@ -137,6 +137,73 @@
                     </svg>
                 </button>
             </section>
+            <div class="modal-overlay">
+                <div class="menu-item-modal">
+                    <div class="modal-image">
+                        <img src="images/coffee-1.jpg" alt="Irish coffee">
+                    </div>
+                    <div class="modal-description">
+                        <div class="modal-title">
+                            <h3>Irish coffee</h3>
+                            <p class="medium">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                        </div>
+                        <div class="modal-size">
+                            <p class="medium">Size</p>
+                            <div class="modal-size-tabs">
+                                <div class="modal-size-tab active" data-value="small" data-cost="0.00">
+                                    <p class="marker action">S</p>
+                                    <p class="size action">200 ml</p>
+                                </div>
+                                <div class="modal-size-tab" data-value="medium" data-cost="0.50">
+                                    <p class="marker action">M</p>
+                                    <p class="size action">300 ml</p>
+                                </div>
+                                <div class="modal-size-tab" data-value="large" data-cost="1.00">
+                                    <p class="marker action">L</p>
+                                    <p class="size action">400 ml</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-additives">
+                            <p class="medium">Additives</p>
+                            <div class="modal-additives-tabs">
+                                <div class="modal-additives-tab" data-value="sugar" data-cost="0.50">
+                                    <p class="marker action">1</p>
+                                    <p class="additive action">Sugar</p>
+                                </div>
+                                <div class="modal-additives-tab" data-value="cinnamon" data-cost="0.50">
+                                    <p class="marker action">2</p>
+                                    <p class="additive action">Cinnamon</p>
+                                </div>
+                                <div class="modal-additives-tab" data-value="syrup" data-cost="0.50">
+                                    <p class="marker action">3</p>
+                                    <p class="additive action">Syrup</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-total">
+                            <h3>Total:</h3>
+                            <h3 class="price">$7.00</h3>
+                        </div>
+                        <div class="modal-alert">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_147811_7611)">
+                                    <path d="M8 7.66663V11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8 5.00667L8.00667 4.99926" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.00016 14.6667C11.6821 14.6667 14.6668 11.6819 14.6668 8.00004C14.6668 4.31814 11.6821 1.33337 8.00016 1.33337C4.31826 1.33337 1.3335 4.31814 1.3335 8.00004C1.3335 11.6819 4.31826 14.6667 8.00016 14.6667Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_147811_7611">
+                                        <rect width="16" height="16" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <p class="caption">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.</p>
+                        </div>
+                        <button class="modal-close action">Close</button>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
             <div id="contacts-offer" class="contacts-offer">
@@ -184,5 +251,6 @@
     <script src="js/burger-menu.js"></script>
     <script src="js/menu-loader.js"></script>
     <script src="js/menu-actions.js"></script>
+    <script src="js/menu-modal.js"></script>
 </body>
 </html>
